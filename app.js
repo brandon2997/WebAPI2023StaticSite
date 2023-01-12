@@ -1,5 +1,6 @@
 var express = require("express") 
 var app = express()
+var port = process.env.port || 3000
 //var path = require("path")
 
 //setup a route for static files
@@ -17,6 +18,6 @@ app.get("/home", function(req,res){
 
 
 
-app.listen(3000, function(){
+app.listen(port, function(){
     console.log("Running on localhost 3000 with wovles")
 })
